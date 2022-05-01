@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body> 
+    <header id ='main-header'>
+        <h1>Играй в игру Тик Так, БУМ!</h1>
+        <p>Сделано на базе HTML, CSS , JS</p>
+    </header>
+    <main>
+        <aside>
+            <h2>Выбери имя</h2>
+            <form>
+                <div>
+                    <label for="playername">Имя игрока</label>
+                    <input type="text" name="username" id="playername">
+                </div>
+                <div>
+                    <button type="button" class="btn btn-alt">Отменить</button>
+                    <button type="submit" class="btn">Подтвердить</button>
+                </div>
+            </form>
+        </aside>
+        <section id ='game-config'>
+            <ol>
+                <li>
+                    <article>
+                        <h2>Игрок 1</h2>
+                        <h3>Имя игрока</h3>
+                        <p>X</p>
+                        <button class="btn btn-alt">Редактировать</button>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Игрок 2</h2>
+                        <h3>Имя игрока</h3>
+                        <p>O</p>
+                        <button>Редактировать</button>
+                    </article>
+                </li>
+            </ol>
+            <button class="btn">Начать новую игру</button>
+        </section>
+        <section id = 'active-game'>
+            <article>
+                <h3>Вы выиграли, <span id = "winner nane">Имя игрока</span></h3>
+                <p>Нажмити "Начать новую игру" выше, чтобы начать новую игру</p>
+            </article>
+
+            <p>Сейчас твоя очередь<span id="active-player-name"> Имя игрока</span>!</p>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
+    </main>
+
+
+    
+</body>
+</html>
