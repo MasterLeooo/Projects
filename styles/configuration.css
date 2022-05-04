@@ -15,6 +15,11 @@ config-overlay {
     margin-bottom: 0.5rem;
 }
 
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
 
 .form-control input {
     font: inherit;
@@ -22,6 +27,16 @@ config-overlay {
     width: 15rem;
     padding: 0.35rem;
 
+}
+
+.error label{
+    color: rgb(136,2,2);
+}
+
+.error input{
+    border-color: rgb(136, 2, 2);
+    color: rgb(136,2,2);
+    background-color: rgb(253,219,219);
 }
 
 #game-config{

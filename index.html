@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/configuration.css">
     <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+ 
 </head>
 <body>
     <div id ="backdrop"></div> 
@@ -23,12 +27,13 @@
         <aside class="modal" id="config-overlay">
             <h2>Выбери имя</h2>
             <form> 
-                <div>
+                <div class = "form-control">
                     <label for="playername">Имя игрока</label>
-                    <input type="text" name="username" id="playername">
+                    <input type="text" name="playername" id="playername" required>
                 </div>
+                <p id = 'config-errors'></p>
                 <div>
-                    <button type="button" class="btn btn-alt">Отменить</button>
+                    <button type="reset" class="btn btn-alt" id ='cancel-config-btn'>Отменить</button>
                     <button type="submit" class="btn">Подтвердить</button>
                 </div>
             </form>
@@ -48,7 +53,7 @@
                         <h2>Игрок 2</h2>
                         <h3>Имя игрока</h3>
                         <p class = 'player-symbol'>O</p>
-                        <button class="btn btn-alt" id ='edit-player-2-btn >Редактировать</button>
+                        <button class="btn btn-alt" id ='edit-player-2-btn'>Редактировать</button>
                     </article>
                 </li>
             </ol>
